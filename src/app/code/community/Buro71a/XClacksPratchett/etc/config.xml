@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of Buro71a_XClacksPratchett.
+ *
+ * This Buro 71a module is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 3 as
+ * published by the Free Software Foundation.
+ *
+ * This script is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * PHP version 5
+ *
+ * @category  Buro71a
+ * @package   Buro71a_XClacksPratchett
+ * @author    Rico Neitzel <info@buro71a.de>
+ * @copyright Büro 71a, Neitzel und Klose GbR (http://buro71a.de/)
+ * @license   http://opensource.org/licenses/gpl-3.0 GNU General Public License, version 3 (GPLv3)
+ * @version   1.0.0
+ * @since     1.0.0
+ */
+-->
+<config>
+    <modules>
+        <Buro71a_XClacksPratchett>
+            <version>1.0.0</version>
+        </Buro71a_XClacksPratchett>
+    </modules>
+    <frontend>
+        <events>
+            <http_response_send_before>
+                <observers>
+                    <buro71a_xclackspratchett>
+                        <class>Buro71a_XClacksPratchett_Model_Observer</class>
+                        <method>sendPratchettHeaderOnHttpResponseSendBefore</method>
+                    </buro71a_xclackspratchett>
+                </observers>
+            </http_response_send_before>
+        </events>
+    </frontend>
+</config>
