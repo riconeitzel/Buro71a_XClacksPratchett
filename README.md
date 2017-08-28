@@ -14,7 +14,7 @@ For more information see [GNU Terry Pratchett](http://www.gnuterrypratchett.com/
 
 # What
 
-This extension uses Magento's event/observer system to insert the X-Clacks-Overhead header hine right before the reponse headers are sent.
+This extension uses Magento's event/observer system to insert the X-Clacks-Overhead header right before the response headers are sent.
 
 # Installation
 
@@ -27,7 +27,7 @@ No further database modification needed.
 To uninstall this extension simply remove the following files and folders:
 
 - app/etc/Buro71a_XClacksPratchett.xml
-- app/etc/community/Buro71a/XClacksPratchett
+- app/code/community/Buro71a/XClacksPratchett
 
 No further database modification needed.
 
